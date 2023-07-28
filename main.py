@@ -1,15 +1,9 @@
 import math
 
-def calculate_distance(lat1, lon1, lat2, lon2):
-    # Konstanten für die Berechnung der Erdkrümmung
-    R = 6371  # Radius der Erde in Kilometern
+# Konstanten für die Berechnung der Erdkrümmung
+R = 6371  # Radius der Erde in Kilometern
 
-    # Umwandlung der Koordinaten in Radiant
-    lat1_rad = math.radians(lat1)
-    lon1_rad = math.radians(lon1)
-    lat2_rad = math.radians(lat2)
-    lon2_rad = math.radians(lon2)
-
+def calculate_distance(lat1_rad, lon1_rad, lat2_rad, lon2_rad):
     # Differenzen der Koordinaten
     dlat = lat2_rad - lat1_rad
     dlon = lon2_rad - lon1_rad
@@ -29,8 +23,14 @@ start_lon = 9.962645416253864
 end_lat = 48.13488
 end_lon = 11.57717
 
+# Umwandlung der Koordinaten in Radiant
+start_lat_rad = math.radians(start_lat)
+start_lon_rad = math.radians(start_lon)
+end_lat_rad = math.radians(end_lat)
+end_lon_rad = math.radians(end_lon)
+
 # Entfernung berechnen
-distance = calculate_distance(start_lat, start_lon, end_lat, end_lon)
+distance = calculate_distance(start_lat_rad, start_lon_rad, end_lat_rad, end_lon_rad)
 
 # Ergebnis ausgeben
 print(f"Die Entfernung zwischen der Davidwache in Hamburg und dem Viktualienmarkt in München beträgt {distance:.2f} km.")
