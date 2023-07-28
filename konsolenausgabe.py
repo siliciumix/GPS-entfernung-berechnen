@@ -33,4 +33,6 @@ end_lon_rad = math.radians(end_lon)
 distance = calculate_distance(start_lat_rad, start_lon_rad, end_lat_rad, end_lon_rad)
 
 # Ergebnis ausgeben
+print()
 print(f"Die Entfernung zwischen der Davidwache in Hamburg und dem Viktualienmarkt in München beträgt {distance:.2f} km.")
+print()

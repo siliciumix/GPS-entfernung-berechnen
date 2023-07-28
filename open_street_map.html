@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8ae72788838517c08ea9d775cc4deb23 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8ae72788838517c08ea9d775cc4deb23" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8ae72788838517c08ea9d775cc4deb23 = L.map(
+                "map_8ae72788838517c08ea9d775cc4deb23",
+                {
+                    center: [50.841975576368114, 10.769907708126933],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e5cd036633c97d93cda5ffe7ad7a5d52 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8ae72788838517c08ea9d775cc4deb23);
+        
+    
+            var marker_21250a9cf558f797018c457039339a10 = L.marker(
+                [53.549071152736225, 9.962645416253864],
+                {}
+            ).addTo(map_8ae72788838517c08ea9d775cc4deb23);
+        
+    
+        var popup_0c579c351acc396cbd13a867da68e21d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f11ea0187bc700b562462430cb3c85fa = $(`<div id="html_f11ea0187bc700b562462430cb3c85fa" style="width: 100.0%; height: 100.0%;">Davidwache, Hamburg</div>`)[0];
+                popup_0c579c351acc396cbd13a867da68e21d.setContent(html_f11ea0187bc700b562462430cb3c85fa);
+            
+        
+
+        marker_21250a9cf558f797018c457039339a10.bindPopup(popup_0c579c351acc396cbd13a867da68e21d)
+        ;
+
+        
+    
+    
+            var marker_e80fb2af64b870671a7f0d31af9fabe0 = L.marker(
+                [48.13488, 11.57717],
+                {}
+            ).addTo(map_8ae72788838517c08ea9d775cc4deb23);
+        
+    
+        var popup_020757698c2ba05b9f00bbc612d2c07e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_491e4c662288469c665de1f689a685c5 = $(`<div id="html_491e4c662288469c665de1f689a685c5" style="width: 100.0%; height: 100.0%;">Viktualienmarkt, München</div>`)[0];
+                popup_020757698c2ba05b9f00bbc612d2c07e.setContent(html_491e4c662288469c665de1f689a685c5);
+            
+        
+
+        marker_e80fb2af64b870671a7f0d31af9fabe0.bindPopup(popup_020757698c2ba05b9f00bbc612d2c07e)
+        ;
+
+        
+    
+    
+            var poly_line_549476ee2751b7677ac12cfc1357c711 = L.polyline(
+                [[53.549071152736225, 9.962645416253864], [48.13488, 11.57717]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_8ae72788838517c08ea9d775cc4deb23);
+        
+</script>
+</html>
